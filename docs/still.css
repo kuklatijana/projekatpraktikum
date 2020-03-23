@@ -1,0 +1,317 @@
+*{ 
+	margin: 0; 
+	padding: 0; 
+}
+html{
+	scroll-behavior: smooth;
+}
+.glavnimeni{
+	position: fixed;
+	width: 100%;
+	height: 60px;
+	background-color: #002a36;
+}
+.telefonmeni{
+	display: none;
+}
+.meni{
+    float: right;
+    list-style: none;
+    margin-top: 20px;
+}
+.meni li{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.meni a, .meni2 a{
+    color: #496268;
+    text-decoration: none;
+    padding: 7px 20px;
+    font-family:"Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+.meni a:hover{
+	color: #b3b5bc;
+}
+.parallax{
+	background-image: url(catpara1.jpg);
+	height: 700px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+}
+.parallax2{
+	background-image: url(catpara2.jpg);
+	height: 600px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+}
+.naslov{
+	padding-top: 500px;
+	font-family: Roboto;
+	color: #496268;
+	font-weight: bold;
+	margin-left: -400px;
+	opacity: 0;
+	transition: 1.5s;
+}
+.paranaslov1{
+	margin: 20px 0 20px 0;
+	font-size: 60px;
+	color:white;
+}
+.paratekst1{
+	font-size: 20px;
+	color:white;
+}
+#naslovi{
+	padding: 10px 0 10px 0;
+	font-family: roboto;
+	background-color: #002a36;
+	color: white;
+}
+.row{
+	padding-top: 30px;
+	display: flex;
+	justify-content: center;
+	background-color: #002a36;
+	color: white;
+	font-family: roboto;
+}
+#row2{
+	background-color: transparent;
+}
+.column, .column2, .column3{
+	width: 23%;
+	float: left;
+	margin: 10px;
+	padding: 10px;
+	font-size: 20px;
+}
+.column2, .column3{
+	width: 50%;
+}
+.catpic1, .petsop{
+	width: 100%;
+	height: auto;
+}
+.sadrzaj{
+	text-align: justify;
+}
+input{
+	background: transparent;
+	border: none;
+	border-bottom: 2px solid #496268;
+}
+input[type="email"]{
+	display: block;
+	width: 90%;
+	margin-left: 20px;
+	border: 2px solid white;
+}
+input[type="text"]{
+	width: 40%;
+	margin: 30px 30px 30px 20px ;
+	border: 2px solid white;
+}
+textarea{
+	background: transparent;
+	border: 2px solid white;
+	margin: 30px 20px;
+	width: 90%;
+}
+input[type="text"]::placeholder, input[type="email"]::placeholder, textarea::placeholder{
+	color:white;
+}
+#kontakti{
+	margin: 30px 50px;
+	color: white;
+}
+#kontakt{
+	background: transparent;
+}
+.kont{
+	font-family: roboto;
+	font-size: 20px;
+	list-style-type: none;
+	color: white;
+	margin: 30px 50px;
+}
+button[type="submit"]{
+	border: 2px solid white;
+	background: transparent;
+	color: white;
+	padding: 5px;
+}
+footer{
+	background-color: #496268;
+	height: auto;
+	padding: 10px;
+}
+#footertekst{
+	font-family: roboto;
+	font-size: 15px;
+}
+h3{
+	color: #496268;
+}
+.ham{
+	float: right;
+	width: 30px;
+	height: auto;
+	margin: 15px 15px 0 0;
+	display: none;
+}
+#pocetak{
+	float: right;
+	position: relative;
+	bottom: 25px;
+	right: 30px;
+}
+@media (max-width: 992px){
+	.meni{
+		display: none;
+	}
+	ul{
+		list-style-type: none;
+	}
+	.catlogo1{
+		float:right;
+	}
+	.glavnimeni{
+		display: none;
+	}
+	.telefonmeni{
+    	position: fixed;
+    	display: inline-block;
+    	width: 100%;
+    	background-color: #002a36;
+    }
+	.meni2{
+		z-index: 1;
+    	display: none;
+    	position: relative;
+    	background-color: #496268;
+    	min-width: 200px;
+	}
+	ul{
+		decoration:none;
+	}
+	.meni2 a{
+		z-index: 2;
+    	color: black;
+    	padding: 20px 60px;
+    	text-decoration: none;
+    	display: block;
+    	text-align: center;
+		font-weight:bold;
+		font-family: roboto;
+		text-transform: uppercase;
+	}
+	.meni2 a:hover{
+		color:#b3b5bc;
+	}
+	.telefonmeni:hover .meni2{
+		display: block;
+	}
+	.row{
+		display: block;
+		padding: 30px 0;
+	}
+	.column, .column2, .column3{
+		width:95%;
+		margin-top: 0px;
+	}
+	.sadrzaj{
+		width: 95%;
+	}
+	.parallax2{
+		height: 1600px;
+	}
+	input{
+	background: transparent;
+	border: none;
+	border-bottom: 2px solid black;
+	}
+	input[type="email"]{
+	display: block;
+	width: 90%;
+	margin-left: 20px;
+	border: 2px solid black;
+	}
+	input[type="text"]{
+		width: 40%;
+		margin: 30px 30px 30px 20px ;
+		border: 2px solid black;
+	}
+	textarea{
+		background: transparent;
+		border: 2px solid black;
+		margin: 30px 20px;
+		width: 90%;
+	}
+	input[type="text"]::placeholder, input[type="email"]::placeholder, textarea::placeholder{
+		color:white;
+	}
+	#kontakti{
+		margin: 30px 50px;
+	}
+	#kontakt{
+		background: transparent;
+	}
+	.kont{
+		font-family: roboto;
+		font-size: 20px;
+		list-style-type: none;
+		color: white;
+		margin: 30px 50px;
+	}
+	button[type="submit"]{
+		border: 2px solid white;
+		background: transparent;
+		color: white;
+		padding: 5px;
+	}
+@media (max-width: 600px){
+	.row{
+		display: block;
+		padding: 30px 0;
+	}
+	.column{
+		width: 90%;
+		margin-top: 0px;
+	}
+	.parallax2{
+		height: 800px;
+	}
+	.sadrzaj{
+		font-size: 12px;
+	}
+	h1{
+		font-size: 20px;
+	}
+	input[type="text"]{
+		width: 50%;
+	}
+	
+	button:hover{
+		font-size: 12px;
+	}
+	.kont{
+		font-family: roboto;
+		font-size: 20px;
+		list-style-type: none;
+		color: white;
+		margin: 30px 50px;
+	}
+	.parallax2{
+		height: 1300px;
+	}
+	.naslov{
+		animation: none;
+	}
+}
